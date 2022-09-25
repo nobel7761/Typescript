@@ -49,14 +49,14 @@ user.name; */
 ================================================================
 */
 
-interface APIResponse {
+/* interface APIResponse<T> {
   status: number;
   type: string;
-  data: object;
+  data: T;
 }
 
-const response1: APIResponse = {
+const response1: APIResponse<string> = {
   status: 200,
   type: "success",
   data: "Nobel",
-};
+}; */
