@@ -20,3 +20,4 @@ const response2: APIResponse<string> = {
 };
 
 console.log(response2);
+// {status:200, type: 0 , data: 'test'}
