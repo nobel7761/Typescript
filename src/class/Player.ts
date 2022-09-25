@@ -1,11 +1,17 @@
-export class Player {
-    constructor(
-      public  name: string,
-      public age: number,
-      public  country: string
-    ){}
-    
-    play() {
-      console.log(`${this.name} from ${this.country} is playing!`);
-    }
+import { IsPlayer } from "../interfaces/IsPlayer.js";
+
+export class Player implements IsPlayer {
+  constructor(
+    public name: string,
+    private age: number,
+    readonly country: string
+  ) {}
+
+  getProperty() {
+    return this.age;
   }
+
+  play() {
+    console.log(`${this.name} from ${this.country} is playing!`);
+  }
+}
